@@ -17,8 +17,8 @@ int main ()
     cout << endl;
 
     // Get grades and credit hours from user
-    float gradeForClass1, gradeForClass2, gradeForClass3, gradeForClass4, gradeForClass5;
-    float creditsForClass1, creditsForClass2, creditsForClass3, creditsForClass4, creditsForClass5;
+    double gradeForClass1, gradeForClass2, gradeForClass3, gradeForClass4, gradeForClass5;
+    double creditsForClass1, creditsForClass2, creditsForClass3, creditsForClass4, creditsForClass5;
     cout << "Please enter the GPA and credit hours for your first class: ";
     cin >> gradeForClass1 >> creditsForClass1;
     cout << "\nPlease enter the GPA and credit hours for your second class: ";
@@ -31,16 +31,16 @@ int main ()
     cin >> gradeForClass5 >> creditsForClass5;
 
     //multiply grades and points and add them up
-    float sum = (gradeForClass1 * creditsForClass1)
+    double sum = (gradeForClass1 * creditsForClass1)
                 + (gradeForClass2 * creditsForClass2)
                 + (gradeForClass3 * creditsForClass3)
                 + (gradeForClass4 * creditsForClass4)
                 + (gradeForClass5 * creditsForClass5);
     //divide by total credits
-    float total_credits = creditsForClass1 + creditsForClass2 + creditsForClass3 + creditsForClass4 + creditsForClass5;
-    float weighted_average = sum / total_credits;
+    double totalCredits = creditsForClass1 + creditsForClass2 + creditsForClass3 + creditsForClass4 + creditsForClass5;
+    double weightedAverage = sum / totalCredits;
 
     //output results
-    cout << "Your GPA for last semester is " << weighted_average << endl;
+    cout << "Your GPA for last semester is " << weightedAverage << endl;
 
 }
