@@ -45,7 +45,7 @@ int main() {
   
   
    
-    // An very weird loop example that employs randomness.
+    // A very weird loop example that employs randomness.
     // Try to figure out what it does.
     /*srand(time(0));
     int i;
@@ -58,7 +58,7 @@ int main() {
 
 
     // Example: Using a loop to reverse the characters in a string
-    string myString = "";
+    /*string myString = "";
     cin >> myString;
 
     int i=0;
@@ -68,7 +68,7 @@ int main() {
         myNewString += myString.at((strLen-1)-i);
         i++;
     }
-    cout << myNewString << endl;
+    cout << myNewString << endl;*/
 
 
 
