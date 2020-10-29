@@ -1,14 +1,23 @@
 #include <iostream>
 using namespace std;
 
+// Useful web links for ASCII art:
+// https://www.asciiart.eu/mythology/gryphon
+// https://www.asciiart.eu/mythology/dragons
+// https://www.asciiart.eu/mythology/unicorns
 
 class MagicPet {
 private:
     string type = "gryphon";
+    string name = "UNNAMED_PET";
+    string color;
+    string eyeColor;
+    string size;
 public:
     MagicPet(string userChoice) {}
     void Render() {cout << "rendering..." << endl;}
     string Description() {return "description";}
+    void SetName(string name) {this->name = name;}
 };
 
 int main() {
@@ -34,5 +43,12 @@ int main() {
     pet.Render();
     cout << pet.Description() << endl;
 
+    string petName;
+    cout << endl;
+    cout << "What do you want to name your pet?" << endl;
+    cin >> petName;
+    pet.SetName(petName);
+
     return 0;
 }
+
