@@ -96,7 +96,7 @@ char check_bl_tr_diagonal(char board[BOARD_SIZE][BOARD_SIZE]) {
         int row = BOARD_SIZE - (i + 1);
         int col = i;
 
-        if (board[i][i] != bottomLeftPlayer) {
+        if (board[row][col] != bottomLeftPlayer) {
             foundWinner = false;
             break;
         }
