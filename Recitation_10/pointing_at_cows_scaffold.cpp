@@ -40,5 +40,9 @@ int main()
     for (int i = 0; i < 5; i++) {
         //TODO: Add 5 new cows
     }
+    
+    // Display each cow
     print_the_cows(myCows);
+    
+    // TODO: delete one of the cows
     
