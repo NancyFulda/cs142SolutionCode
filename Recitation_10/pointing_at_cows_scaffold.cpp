@@ -45,4 +45,6 @@ int main()
     print_the_cows(myCows);
     
     // TODO: delete one of the cows
-    
+
+    return 0;
+}
